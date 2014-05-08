@@ -1,0 +1,9 @@
+# Clear Statamic Cache
+# clear_cache:
+
+# Clear PHP OPcache (PHP 5.5.x)
+# clear_php_opcache:
+
+# Clear rendered html cache
+# http://statamic.com/learn/advanced-features/html-caching
+# clear_html_caching:

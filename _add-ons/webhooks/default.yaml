@@ -1,0 +1,3 @@
+clear_cache: yes
+clear_php_opcache: yes
+clear_html_caching: no
