@@ -1,3 +1,6 @@
+# Define an API key to prevent unwanted usage
+api_key:
+
 # Clear Statamic Cache
 # clear_cache:
 
