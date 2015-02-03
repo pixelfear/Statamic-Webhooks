@@ -36,8 +36,12 @@ class Hooks_webhooks extends Hooks
 
 	private function clearStatamicCache()
 	{
-		$cache_folder = BASE_PATH . '/_cache/_app/';
-		Folder::delete($cache_folder, true);
+		$app_cache_folder = BASE_PATH . '/_cache/_app/';
+		Folder::delete($app_cache_folder, true);
+		
+		$tag_cache_folder = BASE_PATH . '/_cache/_add-ons/cache/';
+		Folder::delete($tag_cache_folder, true);
+		
 		$this->log->info('Statamic\'s cache has been cleared.');
 	}
 
