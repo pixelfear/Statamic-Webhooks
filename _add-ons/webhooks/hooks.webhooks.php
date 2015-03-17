@@ -9,7 +9,7 @@ class Hooks_webhooks extends Hooks
 	public function webhooks__go()
 	{
 		// Back out if the API isn't supplied or is incorrect
-		if (Request::get('api_key') != $this->fetchConfig('api_key', Helper::getRandomString())) {
+		if (Request::get('api_key') != $this->fetchConfig('api_key', Helper::getRandomString(), null, false, false)) {
 			$app = \Slim\Slim::getInstance();
 			$app->halt(403, 'Invalid API key.');
 		}
