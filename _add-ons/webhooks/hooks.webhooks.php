@@ -28,6 +28,11 @@ class Hooks_webhooks extends Hooks
 			// Clear rendered html cache
 			$this->clearHtmlCache();
 		}
+
+		if ($this->config['clear_tag_cache']) {
+			// Clear {{ cache }} template tag cache
+			$this->clearTagCache();
+		}
 	}
 
 
@@ -58,4 +63,10 @@ class Hooks_webhooks extends Hooks
 		$this->log->info('Rendered HTML cache has been cleared.');
 	}
 
+	private function clearTagCache()
+	{
+		$cache_folder = BASE_PATH . '/_cache/_add-ons/cache/';
+		Folder::delete($cache_folder, true);
+		$this->log->info('Template tag cache has been cleared.');
+	}
 }
