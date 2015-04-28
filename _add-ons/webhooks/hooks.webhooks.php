@@ -52,8 +52,12 @@ class Hooks_webhooks extends Hooks
 
 	private function clearOpCache()
 	{
-		opcache_reset();
-		$this->log->info('OpCache has been cleared.');
+		if (function_exists('opcache_reset')) {
+			opcache_reset();
+			$this->log->info('OpCache has been cleared.');
+		} else {
+			$this->log->info('OpCache could not be cleared. OpCache requires PHP 5.5.');
+		}
 	}
 
 	private function clearHtmlCache()
