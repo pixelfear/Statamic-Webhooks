@@ -2,11 +2,18 @@
 api_key:
 
 # Clear Statamic Cache
-# clear_cache:
+#clear_cache: yes
 
 # Clear PHP OPcache (PHP 5.5.x)
-# clear_php_opcache:
+#clear_php_opcache: no
 
 # Clear rendered html cache
 # http://statamic.com/learn/advanced-features/html-caching
-# clear_html_caching:
+#clear_html_caching: yes
+
+# Clear template cache
+# http://statamic.com/learn/documentation/tags/cache
+#clear_tag_cache: no
+
+# Clear mod_pagespeed cache
+#clear_pagespeed_cache: no
