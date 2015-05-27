@@ -1,6 +1,9 @@
 # Define an API key to prevent unwanted usage
 api_key:
 
+# Enable Ajax notification
+ajax_notification: true
+
 # Clear Statamic Cache
 #clear_cache: yes
 

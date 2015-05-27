@@ -1,0 +1,7 @@
+translations:
+  cms_cache_success: "Statamic cache has been cleared."
+  opcache_success: "PHP OPCache has been cleared."
+  html_cache_success: "HTML cache has been cleared."
+  tag_cache_success: "Template cache has been cleared."
+  pagespeed_success: "Pagespeed cache has been cleared."
+  pagespeed_failure: "Pagespeed module is not installed."
