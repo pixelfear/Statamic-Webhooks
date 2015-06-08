@@ -1,3 +1,6 @@
-clear_cache: yes
-clear_php_opcache: yes
-clear_html_caching: no
+ajax_notification: true
+clear_cache: false
+clear_php_opcache: false
+clear_html_caching: true
+clear_tag_cache: false
+clear_pagespeed_cache: false

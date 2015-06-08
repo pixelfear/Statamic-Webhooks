@@ -7,6 +7,8 @@ This is what can happen when you hit the trigger URL.
 * Clear your Statamic cache. (on by default)
 * Clear your PHP OpCache (on by default if it's installed)
 * Clear your [rendered HTML cache](http://statamic.com/learn/advanced-features/html-caching) (off by default)
+* Clear your `{{ cache }}` tag (off by default)
+* Clear your `pagespeed_module` cache (off by default). This option will not run if you don't have `pagespeed module` installed on your Apache setup.
 
 All of these are customizable in `_config/add-ons/webhooks/webhooks.yaml`.
 
@@ -18,6 +20,7 @@ If you have suggestions or requests for other things to be performed automatical
 * Copy `_add-ons/webhooks/` to your `_add-ons` directory.
 * Copy `_config/add-ons/webhooks` to your `_config/add-ons` directory.
 * Add an `api_key` to `_config/add-ons/webhooks/webhooks.yaml`. This can be anything you want.
+* AJAX notification is enabled by default. You can turn it off in the config file.
 * Optionally update the other values in `webhooks.yaml` to turn on/off functionality.
 
 To trigger the actions, just hit the following URL after deployment.
