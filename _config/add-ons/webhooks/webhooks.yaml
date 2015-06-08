@@ -5,18 +5,18 @@ api_key:
 ajax_notification: true
 
 # Clear Statamic Cache
-#clear_cache: true
+clear_cache: true
 
 # Clear PHP OPcache (PHP 5.5.x)
-#clear_php_opcache: false
+clear_php_opcache: false
 
 # Clear rendered html cache
 # http://statamic.com/learn/advanced-features/html-caching
-#clear_html_caching: false
+clear_html_caching: true
 
 # Clear template cache
 # http://statamic.com/learn/documentation/tags/cache
-#clear_tag_cache: false
+clear_tag_cache: false
 
-# Clear mod_pagespeed cache
-#clear_pagespeed_cache: false
+# Clear mod_pagespeed cache (apache2 and nginx only)
+clear_pagespeed_cache: false

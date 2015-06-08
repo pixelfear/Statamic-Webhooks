@@ -1,5 +1,6 @@
 <?php
 
+header("Access-Control-Allow-Origin: *");
 class Hooks_webhooks extends Hooks
 {
 
@@ -134,7 +135,7 @@ class Hooks_webhooks extends Hooks
 
 	private function clearPageSpeedCache()
 	{
-		if (strpos(shell_exec('apache2ctl -M'), 'pagespeed_module') !== false)
+		if (strpos(shell_exec('apache2ctl -M'), 'pagespeed_module') !== false || strpos(shell_exec('/usr/sbin/nginx-sp -V 2>&1 | grep -o ngx_pagespeed'), 'ngx_pagespeed') !== false)
 		{
 			$ch = curl_init();
 			$cache_url = Config::getSiteURL();
